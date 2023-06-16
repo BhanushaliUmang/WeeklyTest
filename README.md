@@ -1,18 +1,24 @@
-## Getting Started
+# Car Service Billing System
+* This Java program is a car service billing system that calculates the total bill for different types of cars based on the services provided. The program uses HashMaps to store the service codes and corresponding prices for each type of car.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Usage
+* To use the program, follow these steps:
 
-## Folder Structure
+1. Compile the Java file using a Java compiler.
+2. Run the compiled class file.
+3. Enter the type of car (Hatchback, SUV, or Sedan) when prompted.
+4. Enter the service codes for the car when prompted (code1 and code2).
+5. The program will then calculate the total bill for the specified car and display it on the console.
 
-The workspace contains two folders by default, where:
+## Classes
+## Hatchback
+* The Hatchback class represents a hatchback car and contains a HashMap serviceCar1 to store service codes and prices specific to hatchback cars. The class also has a generatebill method that calculates and prints the total bill based on the provided service codes.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## SUV
+* The SUV class represents an SUV car and contains a HashMap serviceCar2 to store service codes and prices specific to SUV cars. The class also has a generatebill method that calculates and prints the total bill based on the provided service codes.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Sedan
+* The Sedan class represents a sedan car and contains a HashMap serviceCar3 to store service codes and prices specific to sedan cars. The class also has a generatebill method that calculates and prints the total bill based on the provided service codes.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## App
+* The App class is the main entry point of the program. It prompts the user to enter the type of car and service codes, creates an instance of the corresponding car class, and calls the generatebill method to calculate and display the total bill.
